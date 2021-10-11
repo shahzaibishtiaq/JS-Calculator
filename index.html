@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .text{
+            width: 210px;
+            font-size: 25px;
+
+        }
+        .button{
+            width: 50px;
+            height: 50px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .form{
+        
+        }
+    </style>
+<script>
+    function btnclear()
+    {
+        document.fom.txt.value="";
+    }
+    
+    </script>
+    </head>
+<body>
+    <form name="fom" class="form">
+        <table>
+             <tr>
+             <td colspan="4"><input name="txt" class="text" type="text"/></td>
+             </tr>
+            <tr>
+                <td><input onclick="btnclear();" class="button" value="C" type="button"/></td>
+                <td><input onclick="document.fom.txt.value +=('%');" class="button" value="%"type="button"/></td> 
+                <td><input onclick="document.fom.txt.value +=('/');" class="button" value="/"type="button"/></td> 
+                <td><input onclick="document.fom.txt.value +=('-');" class="button" value="-"type="button"/></td> 
+             
+           </tr>
+            <tr>
+                <td><input onclick="document.fom.txt.value +=(7);" class="button" value="7" type="button"/></td>
+                <td><input onclick="document.fom.txt.value +=(8);" class="button" value="8" type="button"/></td> 
+                <td><input onclick="document.fom.txt.value +=(9);" class="button" value="9" type="button"/></td> 
+                <td><input onclick="document.fom.txt.value +=('+');" class="button" value="+" type="button"/></td> 
+             
+           </tr>
+               <tr>
+                <td><input onclick="document.fom.txt.value +=(4);" class="button" value="4"type="button"/></td>
+                <td><input onclick="document.fom.txt.value +=(5);" class="button"value="5" type="button"/></td> 
+                <td><input onclick="document.fom.txt.value +=(6);" class="button" value="6"type="button"/></td> 
+                <td><input onclick="document.fom.txt.value +=('*');" class="button" value="x"type="button"/></td> 
+             
+           </tr>
+               <tr>
+                <td><input onclick="document.fom.txt.value +=(1);" class="button" value="1"type="button"/></td>
+                <td><input onclick="document.fom.txt.value +=(2);" class="button" value="2"type="button"/></td> 
+                <td><input onclick="document.fom.txt.value +=(3);"class="button"value="3" type="button"/></td> 
+                <td rowspan="2"><input onclick="document.fom.txt.value=eval(document.fom.txt.value)" style="height: 106px;"class="button" value="="type="button"/></td> 
+             
+           </tr>
+               <tr>
+                <td colspan="2"><input onclick="document.fom.txt.value +=(0);"style="width: 106px;"class="button" value="0"type="button"/></td>
+                <td><input onclick="document.fom.txt.value +=('.');" class="button" value="." type="button"/></td> 
+           </tr>
+        </table>
+    </form>
+    
+    </body>
+</html>
